@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'serif': ['"Tiempos Text Regular"', ...defaultTheme.fontFamily.serif],
+        'serif': ['"Tiempos Fine"', ...defaultTheme.fontFamily.serif],
         'sans': ['Inter', ...defaultTheme.fontFamily.sans],
       },
       colors: {
@@ -15,8 +15,10 @@ module.exports = {
         'cinereous': '#ac9b94',
         'isabelline': '#f5efeb',
         'timberwolf': '#dfd8d3',
-        'russianviolet': '#2E1A6F',
+        'russianviolet': '#201445',
         'tropicalindigo': '#9484c6',
+        'grape': '#5233b0',
+        'persianindigo': '#351e7a',
       },
       keyframes: {
         'open-menu': {
