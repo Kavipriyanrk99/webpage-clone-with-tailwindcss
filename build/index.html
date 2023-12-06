@@ -6,10 +6,11 @@
     <title>podia</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/fe027c55e9.js" crossorigin="anonymous"></script>
 </head>
 <body class="min-h-screen bg-white font-sans">
     <header class="sticky top-0 z-20 bg-white shadow-md">
-        <section class="max-w-7xl mx-auto flex justify-between items-center px-8 py-3.5">
+        <section class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3.5">
             <nav class="flex items-center text-lg relative" aria-label="main">
               <a href="https://www.podia.com/" class="pr-7">
                   <svg xmlns="http://www.w3.org/2000/svg"  class="w-20 h-7 fill-tekhelet hover:fill-russianviolet">
@@ -18,10 +19,10 @@
                     </svg>
               </a>
               <div class="relative">
-                <button id="website-menu-btn" name="website-menu-btn" class="hidden 2xl:inline-block hover:bg-isabelline rounded-full px-3.5 py-2 border-4 border-white ">
+                <button id="website-menu-btn" name="website-menu-btn" class="hidden lg:inline-block hover:bg-isabelline rounded-full px-3.5 py-2 border-4 border-white ">
                     Website <img src="./img/arrow-down-sign-to-navigate.png" alt="drop-menu" class="w-2.5 inline-block">
                 </button>
-                <nav id="website-menu" aria-label="website-menu" class="hidden absolute top-14 z-10 p-6 justify-between border border-timberwolf bg-white rounded-lg drop-shadow-xl w-96">
+                <nav id="website-menu" aria-label="website-menu" class="hidden animate-open-menu absolute top-14 z-10 p-6 justify-between border border-timberwolf bg-white rounded-lg drop-shadow-xl w-96">
                   <div class="w-40 pb-8">
                       <h3 class="text-xs tracking-widest text-cinereous mt-2 mb-4 font-sans font-semibold">PLATFORM</h3>
                       <ul>
@@ -53,10 +54,10 @@
                 </nav>
               </div>
               <div class="relative">
-                <button id="email-menu-btn" name="email-menu-btn" class="hidden 2xl:inline-block hover:bg-isabelline rounded-full px-3.5 py-2 border-4 border-white">
+                <button id="email-menu-btn" name="email-menu-btn" class="hidden lg:inline-block hover:bg-isabelline rounded-full px-3.5 py-2 border-4 border-white">
                     Email <img src="./img/arrow-down-sign-to-navigate.png" alt="drop-menu" class="w-2.5 inline-block">
                 </button>
-                <nav id="email-menu" aria-label="email-menu" class="hidden absolute top-14 z-10 p-6 justify-between border border-timberwolf bg-white rounded-lg drop-shadow-xl w-96">
+                <nav id="email-menu" aria-label="email-menu" class="hidden animate-open-menu absolute top-14 z-10 p-6 justify-between border border-timberwolf bg-white rounded-lg drop-shadow-xl w-96">
                   <div class="w-40 pb-8">
                       <h3 class="text-xs tracking-widest text-cinereous mt-2 mb-4 font-sans font-semibold">PLATFORM</h3>
                       <ul>
@@ -97,10 +98,10 @@
                 </nav>
               </div>
               <div class="relative">
-                <button id="sell-menu-btn" name="sell-menu-btn" class="hidden 2xl:inline-block hover:bg-isabelline rounded-full px-3.5 py-2 border-4 border-white">
+                <button id="sell-menu-btn" name="sell-menu-btn" class="hidden lg:inline-block hover:bg-isabelline rounded-full px-3.5 py-2 border-4 border-white">
                     Sell <img src="./img/arrow-down-sign-to-navigate.png" alt="drop-menu" class="w-2.5 inline-block">
                 </button>
-                <nav id="sell-menu" aria-label="sell-menu" class="hidden absolute top-14 z-10 p-6 justify-between border border-timberwolf bg-white rounded-lg drop-shadow-xl w-96">
+                <nav id="sell-menu" aria-label="sell-menu" class="hidden animate-open-menu absolute top-14 z-10 p-6 justify-between border border-timberwolf bg-white rounded-lg drop-shadow-xl w-96">
                   <div class="w-40 pb-8">
                     <h3 class="text-xs tracking-widest text-cinereous mt-2 mb-4 font-sans font-semibold">PLATFORM</h3>
                       <ul>
@@ -143,14 +144,14 @@
                   </div>
                 </nav>
               </div>
-              <a href="https://www.podia.com/pricing" class="hidden 2xl:inline-block hover:bg-isabelline rounded-full px-3.5 py-2">
+              <a href="https://www.podia.com/pricing" class="hidden lg:inline-block hover:bg-isabelline rounded-full px-3.5 py-2">
                   Pricing
               </a>
               <div class="relative">
-                <button id="resources-menu-btn" name="resources-menu-btn" class="hidden 2xl:inline-block hover:bg-isabelline rounded-full px-3.5 py-2 border-4 border-white">
+                <button id="resources-menu-btn" name="resources-menu-btn" class="hidden lg:inline-block hover:bg-isabelline rounded-full px-3.5 py-2 border-4 border-white">
                     Resources <img src="./img/arrow-down-sign-to-navigate.png" alt="drop-menu" class="w-2.5 inline-block">
                 </button>
-                <nav id="resources-menu" aria-label="resources-menu" class="hidden absolute top-14 z-10 p-6 border border-timberwolf bg-white rounded-lg drop-shadow-xl">
+                <nav id="resources-menu" aria-label="resources-menu" class="hidden animate-open-menu absolute top-14 z-10 p-6 border border-timberwolf bg-white rounded-lg drop-shadow-xl">
                   <h3 class="text-xs tracking-widest text-cinereous mt-2 mb-4 font-sans font-semibold">FREE RESOURCES</h3>
                   <div class="flex justify-between">
                     <div class="w-40 pb-8">
@@ -193,12 +194,187 @@
               <button class="hover:bg-isabelline rounded-full px-3.5 py-2">
                   Login
               </button>
-              <button class="inline-block 2xl:hidden hover:bg-isabelline rounded-full px-3.5 py-2">
+              <button id="mobile-menu-btn" name="mobile-menu-btn" class="inline-block lg:hidden hover:bg-isabelline rounded-full px-3.5 py-2">
                   Menu <img src="./img/arrow-down-sign-to-navigate.png" alt="drop-menu" class="w-2.5 inline-block">
               </button>
-              <button class="hidden 2xl:inline-block bg-tekhelet hover:bg-russianviolet rounded-full px-5 py-2 font-semibold text-white">
+              <button class="hidden lg:inline-block bg-tekhelet hover:bg-russianviolet rounded-full px-5 py-2 font-semibold text-white">
                   Sign up free
               </button>
+              <div id="mobile-menu" class="hidden origin-top animate-open-menu fixed box-border w-full top-0 left-0 m-2 p-6 bg-white border border-timberwolf rounded-lg drop-shadow-xl cursor-pointer">
+                <div id="mobile-menu-label" name="mobile-menu-label" class="flex justify-between pb-5 w-full">
+                    <h3 class="text-xs tracking-widest text-cinereous font-sans font-black">MENU</h3>
+                    <i class="fa-solid fa-xmark text-cinereous hover:text-tekhelet"></i>
+                </div>
+                <div class="w-full">
+                    <button id="website-mobile-btn" name="website-mobile-btn" class="font-serif flex justify-between items-center w-full py-3">
+                        <span class="text-3xl hover:text-tekhelet">Website</span><i class="fa-solid fa-angle-down text-davygray"></i>
+                    </button>
+                    <nav id="website-mobile-menu" aria-label="website-mobile-menu" class="hidden">
+                      <div>
+                          <h3 class="text-xs tracking-widest text-cinereous mt-2 mb-4 font-sans font-semibold">PLATFORM</h3>
+                          <ul>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Website builder</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Website examples</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="w-full pb-8 pt-4 border-t border-timberwolf">
+                          <h3 class="text-xs tracking-widest text-cinereous mt-2 mb-4 font-sans font-semibold">FEATURES</h3>
+                          <ul>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Landing pages</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Link in bio pages</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Portfolio websites</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Integrations</a>
+                              </li>
+                          </ul>
+                      </div>
+                    </nav>
+                </div>
+                <div class="w-full">
+                    <button id="email-mobile-btn" name="email-mobile-btn" class="font-serif flex justify-between items-center w-full py-3">
+                        <span class="text-3xl hover:text-tekhelet">Email</span><i class="fa-solid fa-angle-down text-davygray"></i>
+                    </button>
+                    <nav id="email-mobile-menu" aria-label="email-mobile-menu" class="hidden">
+                      <div>
+                          <h3 class="text-xs tracking-widest text-cinereous mt-2 mb-4 font-sans font-semibold">PLATFORM</h3>
+                          <ul>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Email marketing</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Email examples</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="w-full pb-8 pt-4 border-t border-timberwolf">
+                          <h3 class="text-xs tracking-widest text-cinereous mt-2 mb-4 font-sans font-semibold">FEATURES</h3>
+                          <ul>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Email templates</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Email designer</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Email forms</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Email analytics</a>
+                                  Automations     </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                <a href="">Newsletters</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                <a href="">Automations</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                <a href="">Segmentation</a>
+                              </li>
+                          </ul>
+                      </div>
+                    </nav>
+                </div>
+                <div class="w-full">
+                    <button id="sell-mobile-btn" name="sell-mobile-btn" class="font-serif flex justify-between items-center w-full py-3">
+                        <span class="text-3xl hover:text-tekhelet">Sell</span><i class="fa-solid fa-angle-down text-davygray"></i>
+                    </button>
+                    <nav id="sell-mobile-menu" aria-label="sell-mobile-menu" class="hidden">
+                      <div>
+                          <h3 class="text-xs tracking-widest text-cinereous mt-2 mb-4 font-sans font-semibold">PLATFORM</h3>
+                          <ul>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Online courses</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Digital downloads</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                <a href="">Community</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                <a href="">Checkout</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="w-full pb-8 pt-4 border-t border-timberwolf">
+                          <h3 class="text-xs tracking-widest text-cinereous mt-2 mb-4 font-sans font-semibold">FEATURES</h3>
+                          <ul>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Multimedia products</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Presell products</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Upsells</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Coaching</a>
+                                  Automations     </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                <a href="">Webinars</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                <a href="">Affiliates</a>
+                              </li>
+                          </ul>
+                      </div>
+                    </nav>
+                </div>
+                <div class="w-full">
+                    <a href="https://www.podia.com/pricing" class="font-serif flex justify-between items-center w-full py-3 text-3xl hover:text-tekhelet">
+                        Pricing
+                    </a>
+                </div>
+                <div class="w-full">
+                    <button id="resources-mobile-btn" name="resources-mobile-btn" class="font-serif flex justify-between items-center w-full py-3">
+                        <span class="text-3xl hover:text-tekhelet">Resources</span><i class="fa-solid fa-angle-down text-davygray"></i>
+                    </button>
+                    <nav id="resources-mobile-menu" aria-label="resources-mobile-menu" class="hidden">
+                      <div class="w-full pb-8 pt-4">
+                          <h3 class="text-xs tracking-widest text-cinereous mt-2 mb-4 font-sans font-semibold">PLATFORM</h3>
+                          <ul>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Resource center</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                  <a href="">Hire a Podia Pro</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                <a href="">Creator Advice Library</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                <a href="">Podia demo site</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                <a href="">Creator stories</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                <a href="">Free tools</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                <a href="">Podia Creator Community</a>
+                              </li>
+                              <li class="text-sm text-davygray mb-4 font-sans">
+                                <a href="">Help center</a>
+                              </li>
+                          </ul>
+                      </div>
+                    </nav>
+                </div>
+                <button class="bg-tekhelet hover:bg-russianviolet rounded-full font-semibold text-white w-full py-3 my-5">
+                    Sign up free
+                </button>
             </div>
         </section>
     </header>

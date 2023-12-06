@@ -18,6 +18,25 @@ module.exports = {
         'russianviolet': '#2E1A6F',
         'tropicalindigo': '#9484c6',
       },
+      keyframes: {
+        'open-menu': {
+          '0%' : { 
+            opacity: '0%', 
+          },
+          '33%' : { 
+            opacity: '33%',  
+          },
+          '66%' : { 
+            opacity: '66%',  
+          },
+          '100%' : { 
+            opacity: '100%',  
+          },
+        },
+      },
+      animation: {
+        'open-menu': 'open-menu 0.1s ease-in forwards',
+      }
     },
   },
   plugins: [],

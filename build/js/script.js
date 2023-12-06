@@ -9,6 +9,20 @@ const initApp = () => {
     const sell_menu = document.getElementById("sell-menu");
     const resources_menu = document.getElementById("resources-menu");
 
+    const mobile_menu_btn = document.getElementById("mobile-menu-btn");
+    const mobile_menu = document.getElementById("mobile-menu");
+    const mobile_menu_label = document.getElementById("mobile-menu-label");
+
+    const website_mobile_btn = document.getElementById("website-mobile-btn");
+    const email_mobile_btn = document.getElementById("email-mobile-btn");
+    const sell_mobile_btn = document.getElementById("sell-mobile-btn");
+    const resources_mobile_btn = document.getElementById("resources-mobile-btn");
+
+    const website_mobile_menu = document.getElementById("website-mobile-menu");
+    const email_mobile_menu = document.getElementById("email-mobile-menu");
+    const sell_mobile_menu = document.getElementById("sell-mobile-menu");
+    const resources_mobile_menu = document.getElementById("resources-mobile-menu");
+
     const toggleMenu = (event) => {
         if(event.target.name === "website-menu-btn"){
             if(website_menu.classList.contains('hidden')){
@@ -151,11 +165,55 @@ const initApp = () => {
             resources_menu_btn.classList.remove('border-davygray');
             resources_menu_btn.classList.add('border-white');
             resources_menu_btn.classList.remove('bg-isabelline');
+
         }
         
     }
 
-    document.addEventListener('click', (event) => toggleMenu(event))
+    const toggleMobileMenu = (event) => {
+        mobile_menu.classList.toggle('hidden');
+    }
+
+    const toggleWebsiteMobileMenu = () => {
+        website_mobile_menu.classList.toggle('hidden');
+
+        email_mobile_menu.classList.add('hidden');
+        sell_mobile_menu.classList.add('hidden');
+        resources_mobile_menu.classList.add('hidden');
+    }
+
+    const toggleEmailMobileMenu = () => {
+        email_mobile_menu.classList.toggle('hidden');
+
+        website_mobile_menu.classList.add('hidden');
+        sell_mobile_menu.classList.add('hidden');
+        resources_mobile_menu.classList.add('hidden');
+    }
+
+    const toggleSellMobileMenu = () => {
+        sell_mobile_menu.classList.toggle('hidden');
+
+        website_mobile_menu.classList.add('hidden');
+        email_mobile_menu.classList.add('hidden');
+        resources_mobile_menu.classList.add('hidden');
+    }
+
+    const toggleResourcesMobileMenu = () => {
+        resources_mobile_menu.classList.toggle('hidden');
+
+        website_mobile_menu.classList.add('hidden');
+        email_mobile_menu.classList.add('hidden');
+        sell_mobile_menu.classList.add('hidden');
+    }
+
+    document.addEventListener('click', (event) => toggleMenu(event));
+    mobile_menu_btn.addEventListener('click', (event) => toggleMobileMenu(event));
+    mobile_menu_label.addEventListener('click', (event) => toggleMobileMenu(event));
+    website_mobile_btn.addEventListener('click', toggleWebsiteMobileMenu);
+    email_mobile_btn.addEventListener('click', toggleEmailMobileMenu);
+    sell_mobile_btn.addEventListener('click', toggleSellMobileMenu);
+    resources_mobile_btn.addEventListener('click', toggleResourcesMobileMenu);
+
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
