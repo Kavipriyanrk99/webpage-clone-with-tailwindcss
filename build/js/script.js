@@ -18,6 +18,11 @@ const initApp = () => {
     const sell_mobile_btn = document.getElementById("sell-mobile-btn");
     const resources_mobile_btn = document.getElementById("resources-mobile-btn");
 
+    const website_mobile_btn_icon = document.getElementById("website-mobile-btn-icon");
+    const email_mobile_btn_icon = document.getElementById("email-mobile-btn-icon");
+    const sell_mobile_btn_icon = document.getElementById("sell-mobile-btn-icon");
+    const resources_mobile_btn_icon = document.getElementById("resources-mobile-btn-icon");
+
     const website_mobile_menu = document.getElementById("website-mobile-menu");
     const email_mobile_menu = document.getElementById("email-mobile-menu");
     const sell_mobile_menu = document.getElementById("sell-mobile-menu");
@@ -172,6 +177,15 @@ const initApp = () => {
 
     const toggleMobileMenu = (event) => {
         mobile_menu.classList.toggle('hidden');
+
+        website_mobile_btn_icon.classList.remove('animate-rotate-arrow-f');
+        email_mobile_btn_icon.classList.remove('animate-rotate-arrow-f');  
+        sell_mobile_btn_icon.classList.remove('animate-rotate-arrow-f');
+        resources_mobile_btn_icon.classList.remove('animate-rotate-arrow-f');
+        website_mobile_btn_icon.classList.remove('animate-rotate-arrow-b');
+        email_mobile_btn_icon.classList.remove('animate-rotate-arrow-b');  
+        sell_mobile_btn_icon.classList.remove('animate-rotate-arrow-b');
+        resources_mobile_btn_icon.classList.remove('animate-rotate-arrow-b');
     }
 
     const toggleWebsiteMobileMenu = () => {
@@ -180,6 +194,16 @@ const initApp = () => {
         email_mobile_menu.classList.add('hidden');
         sell_mobile_menu.classList.add('hidden');
         resources_mobile_menu.classList.add('hidden');
+
+        if(website_mobile_btn_icon.classList.contains('animate-rotate-arrow-f')){
+            website_mobile_btn_icon.classList.add('animate-rotate-arrow-b');
+        }else if(website_mobile_btn_icon.classList.contains('animate-rotate-arrow-b')){
+            website_mobile_btn_icon.classList.remove('animate-rotate-arrow-b');
+        }
+        website_mobile_btn_icon.classList.toggle('animate-rotate-arrow-f');
+        email_mobile_btn_icon.classList.remove('animate-rotate-arrow-f');  
+        sell_mobile_btn_icon.classList.remove('animate-rotate-arrow-f');
+        resources_mobile_btn_icon.classList.remove('animate-rotate-arrow-f');      
     }
 
     const toggleEmailMobileMenu = () => {
@@ -188,6 +212,16 @@ const initApp = () => {
         website_mobile_menu.classList.add('hidden');
         sell_mobile_menu.classList.add('hidden');
         resources_mobile_menu.classList.add('hidden');
+
+        if(email_mobile_btn_icon.classList.contains('animate-rotate-arrow-f')){
+            email_mobile_btn_icon.classList.add('animate-rotate-arrow-b');
+        }else if(email_mobile_btn_icon.classList.contains('animate-rotate-arrow-b')){
+            email_mobile_btn_icon.classList.remove('animate-rotate-arrow-b');
+        }
+        website_mobile_btn_icon.classList.remove('animate-rotate-arrow-f');
+        email_mobile_btn_icon.classList.toggle('animate-rotate-arrow-f');  
+        sell_mobile_btn_icon.classList.remove('animate-rotate-arrow-f');
+        resources_mobile_btn_icon.classList.remove('animate-rotate-arrow-f');
     }
 
     const toggleSellMobileMenu = () => {
@@ -196,6 +230,16 @@ const initApp = () => {
         website_mobile_menu.classList.add('hidden');
         email_mobile_menu.classList.add('hidden');
         resources_mobile_menu.classList.add('hidden');
+
+        if(sell_mobile_btn_icon.classList.contains('animate-rotate-arrow-f')){
+            sell_mobile_btn_icon.classList.add('animate-rotate-arrow-b');
+        }else if(sell_mobile_btn_icon.classList.contains('animate-rotate-arrow-b')){
+            sell_mobile_btn_icon.classList.remove('animate-rotate-arrow-b');
+        }
+        website_mobile_btn_icon.classList.remove('animate-rotate-arrow-f');
+        email_mobile_btn_icon.classList.remove('animate-rotate-arrow-f');  
+        sell_mobile_btn_icon.classList.toggle('animate-rotate-arrow-f');
+        resources_mobile_btn_icon.classList.remove('animate-rotate-arrow-f');
     }
 
     const toggleResourcesMobileMenu = () => {
@@ -204,6 +248,16 @@ const initApp = () => {
         website_mobile_menu.classList.add('hidden');
         email_mobile_menu.classList.add('hidden');
         sell_mobile_menu.classList.add('hidden');
+
+        if(resources_mobile_btn_icon.classList.contains('animate-rotate-arrow-f')){
+            resources_mobile_btn_icon.classList.add('animate-rotate-arrow-b');
+        }else if(resources_mobile_btn_icon.classList.contains('animate-rotate-arrow-b')){
+            resources_mobile_btn_icon.classList.remove('animate-rotate-arrow-b');
+        }
+        website_mobile_btn_icon.classList.remove('animate-rotate-arrow-f');
+        email_mobile_btn_icon.classList.remove('animate-rotate-arrow-f');  
+        sell_mobile_btn_icon.classList.remove('animate-rotate-arrow-f');
+        resources_mobile_btn_icon.classList.toggle('animate-rotate-arrow-f');
     }
 
     document.addEventListener('click', (event) => toggleMenu(event));
@@ -257,13 +311,13 @@ const initApp = () => {
         podia_menu.classList.add('hidden');
         social_menu.classList.add('hidden');
 
-        platform_icon.classList.toggle('animate-rotate-arrow');
-        support_icon.classList.remove('animate-rotate-arrow');
-        features_icon.classList.remove('animate-rotate-arrow');
-        compare_icon.classList.remove('animate-rotate-arrow');
-        resources_icon.classList.remove('animate-rotate-arrow');
-        podia_icon.classList.remove('animate-rotate-arrow');
-        social_icon.classList.remove('animate-rotate-arrow');
+        platform_icon.classList.toggle('animate-rotate-arrow-f');
+        support_icon.classList.remove('animate-rotate-arrow-f');
+        features_icon.classList.remove('animate-rotate-arrow-f');
+        compare_icon.classList.remove('animate-rotate-arrow-f');
+        resources_icon.classList.remove('animate-rotate-arrow-f');
+        podia_icon.classList.remove('animate-rotate-arrow-f');
+        social_icon.classList.remove('animate-rotate-arrow-f');
 
         if(window.innerWidth < 768){
             platform.classList.add('text-tekhelet');
@@ -294,13 +348,13 @@ const initApp = () => {
         podia_menu.classList.add('hidden');
         social_menu.classList.add('hidden');
 
-        platform_icon.classList.remove('animate-rotate-arrow');
-        support_icon.classList.toggle('animate-rotate-arrow');
-        features_icon.classList.remove('animate-rotate-arrow');
-        compare_icon.classList.remove('animate-rotate-arrow');
-        resources_icon.classList.remove('animate-rotate-arrow');
-        podia_icon.classList.remove('animate-rotate-arrow');
-        social_icon.classList.remove('animate-rotate-arrow');
+        platform_icon.classList.remove('animate-rotate-arrow-f');
+        support_icon.classList.toggle('animate-rotate-arrow-f');
+        features_icon.classList.remove('animate-rotate-arrow-f');
+        compare_icon.classList.remove('animate-rotate-arrow-f');
+        resources_icon.classList.remove('animate-rotate-arrow-f');
+        podia_icon.classList.remove('animate-rotate-arrow-f');
+        social_icon.classList.remove('animate-rotate-arrow-f');
 
         if(window.innerWidth < 768){
             platform.classList.remove('text-tekhelet');
@@ -331,13 +385,13 @@ const initApp = () => {
         podia_menu.classList.add('hidden');
         social_menu.classList.add('hidden');
 
-        platform_icon.classList.remove('animate-rotate-arrow');
-        support_icon.classList.remove('animate-rotate-arrow');
-        features_icon.classList.toggle('animate-rotate-arrow');
-        compare_icon.classList.remove('animate-rotate-arrow');
-        resources_icon.classList.remove('animate-rotate-arrow');
-        podia_icon.classList.remove('animate-rotate-arrow');
-        social_icon.classList.remove('animate-rotate-arrow');
+        platform_icon.classList.remove('animate-rotate-arrow-f');
+        support_icon.classList.remove('animate-rotate-arrow-f');
+        features_icon.classList.toggle('animate-rotate-arrow-f');
+        compare_icon.classList.remove('animate-rotate-arrow-f');
+        resources_icon.classList.remove('animate-rotate-arrow-f');
+        podia_icon.classList.remove('animate-rotate-arrow-f');
+        social_icon.classList.remove('animate-rotate-arrow-f');
 
         if(window.innerWidth < 768){
             platform.classList.remove('text-tekhelet');
@@ -368,13 +422,13 @@ const initApp = () => {
         podia_menu.classList.add('hidden');
         social_menu.classList.add('hidden');
 
-        platform_icon.classList.remove('animate-rotate-arrow');
-        support_icon.classList.remove('animate-rotate-arrow');
-        features_icon.classList.remove('animate-rotate-arrow');
-        compare_icon.classList.toggle('animate-rotate-arrow');
-        resources_icon.classList.remove('animate-rotate-arrow');
-        podia_icon.classList.remove('animate-rotate-arrow');
-        social_icon.classList.remove('animate-rotate-arrow');
+        platform_icon.classList.remove('animate-rotate-arrow-f');
+        support_icon.classList.remove('animate-rotate-arrow-f');
+        features_icon.classList.remove('animate-rotate-arrow-f');
+        compare_icon.classList.toggle('animate-rotate-arrow-f');
+        resources_icon.classList.remove('animate-rotate-arrow-f');
+        podia_icon.classList.remove('animate-rotate-arrow-f');
+        social_icon.classList.remove('animate-rotate-arrow-f');
 
         if(window.innerWidth < 768){
             platform.classList.remove('text-tekhelet');
@@ -405,13 +459,13 @@ const initApp = () => {
         podia_menu.classList.add('hidden');
         social_menu.classList.add('hidden');
 
-        platform_icon.classList.remove('animate-rotate-arrow');
-        support_icon.classList.remove('animate-rotate-arrow');
-        features_icon.classList.remove('animate-rotate-arrow');
-        compare_icon.classList.remove('animate-rotate-arrow');
-        resources_icon.classList.toggle('animate-rotate-arrow');
-        podia_icon.classList.remove('animate-rotate-arrow');
-        social_icon.classList.remove('animate-rotate-arrow');
+        platform_icon.classList.remove('animate-rotate-arrow-f');
+        support_icon.classList.remove('animate-rotate-arrow-f');
+        features_icon.classList.remove('animate-rotate-arrow-f');
+        compare_icon.classList.remove('animate-rotate-arrow-f');
+        resources_icon.classList.toggle('animate-rotate-arrow-f');
+        podia_icon.classList.remove('animate-rotate-arrow-f');
+        social_icon.classList.remove('animate-rotate-arrow-f');
 
         if(window.innerWidth < 768){
             platform.classList.remove('text-tekhelet');
@@ -442,13 +496,13 @@ const initApp = () => {
         resources_a_menu.classList.add('hidden');
         social_menu.classList.add('hidden');
 
-        platform_icon.classList.remove('animate-rotate-arrow');
-        support_icon.classList.remove('animate-rotate-arrow');
-        features_icon.classList.remove('animate-rotate-arrow');
-        compare_icon.classList.remove('animate-rotate-arrow');
-        resources_icon.classList.remove('animate-rotate-arrow');
-        podia_icon.classList.toggle('animate-rotate-arrow');
-        social_icon.classList.remove('animate-rotate-arrow');
+        platform_icon.classList.remove('animate-rotate-arrow-f');
+        support_icon.classList.remove('animate-rotate-arrow-f');
+        features_icon.classList.remove('animate-rotate-arrow-f');
+        compare_icon.classList.remove('animate-rotate-arrow-f');
+        resources_icon.classList.remove('animate-rotate-arrow-f');
+        podia_icon.classList.toggle('animate-rotate-arrow-f');
+        social_icon.classList.remove('animate-rotate-arrow-f');
 
         if(window.innerWidth < 768){
             platform.classList.remove('text-tekhelet');
@@ -479,13 +533,13 @@ const initApp = () => {
         resources_a_menu.classList.add('hidden');
         podia_menu.classList.add('hidden');
 
-        platform_icon.classList.remove('animate-rotate-arrow');
-        support_icon.classList.remove('animate-rotate-arrow');
-        features_icon.classList.remove('animate-rotate-arrow');
-        compare_icon.classList.remove('animate-rotate-arrow');
-        resources_icon.classList.remove('animate-rotate-arrow');
-        podia_icon.classList.remove('animate-rotate-arrow');
-        social_icon.classList.toggle('animate-rotate-arrow');
+        platform_icon.classList.remove('animate-rotate-arrow-f');
+        support_icon.classList.remove('animate-rotate-arrow-f');
+        features_icon.classList.remove('animate-rotate-arrow-f');
+        compare_icon.classList.remove('animate-rotate-arrow-f');
+        resources_icon.classList.remove('animate-rotate-arrow-f');
+        podia_icon.classList.remove('animate-rotate-arrow-f');
+        social_icon.classList.toggle('animate-rotate-arrow-f');
 
         if(window.innerWidth < 768){
             platform.classList.remove('text-tekhelet');

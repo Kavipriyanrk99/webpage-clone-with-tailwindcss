@@ -599,21 +599,6 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.my-12{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -753,17 +738,63 @@ video {
   animation: open-menu 0.1s ease-in forwards;
 }
 
-@keyframes rotate-arrow{
+@keyframes rotate-arrow-b{
+  0%{
+    transform: rotate(180deg);
+  }
+
+  17%{
+    transform: rotate(150deg);
+  }
+
+  33%{
+    transform: rotate(120deg);
+  }
+
+  52%{
+    transform: rotate(90deg);
+  }
+
+  66%{
+    transform: rotate(60deg);
+  }
+
+  83%{
+    transform: rotate(30deg);
+  }
+
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.animate-rotate-arrow-b{
+  animation: rotate-arrow-b 0.1s linear forwards;
+}
+
+@keyframes rotate-arrow-f{
   0%{
     transform: rotate(0deg);
+  }
+
+  17%{
+    transform: rotate(30deg);
   }
 
   33%{
     transform: rotate(60deg);
   }
 
+  52%{
+    transform: rotate(90deg);
+  }
+
   66%{
     transform: rotate(120deg);
+  }
+
+  83%{
+    transform: rotate(150deg);
   }
 
   100%{
@@ -771,8 +802,8 @@ video {
   }
 }
 
-.animate-rotate-arrow{
-  animation: rotate-arrow 0.3s linear forwards;
+.animate-rotate-arrow-f{
+  animation: rotate-arrow-f 0.1s linear forwards;
 }
 
 .cursor-pointer{
@@ -809,10 +840,6 @@ video {
 
 .gap-3\.5{
   gap: 0.875rem;
-}
-
-.gap-4{
-  gap: 1rem;
 }
 
 .overflow-y-auto{
@@ -936,14 +963,14 @@ video {
   padding-right: 1.5rem;
 }
 
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.py-28{
-  padding-top: 7rem;
-  padding-bottom: 7rem;
 }
 
 .py-3{
@@ -959,16 +986,6 @@ video {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .pb-5{
@@ -1273,10 +1290,6 @@ video {
 
   .md\:opacity-0{
     opacity: 0;
-  }
-
-  .md\:opacity-100{
-    opacity: 1;
   }
 }
 

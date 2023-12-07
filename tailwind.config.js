@@ -36,24 +36,57 @@ module.exports = {
             opacity: '100%',  
           },
         },
-        'rotate-arrow': {
+        'rotate-arrow-f': {
           '0%' : { 
             transform: 'rotate(0deg)', 
+          },
+          '17%' : { 
+            transform: 'rotate(30deg)', 
           },
           '33%' : { 
             transform: 'rotate(60deg)',  
           },
+          '52%' : { 
+            transform: 'rotate(90deg)', 
+          },
           '66%' : { 
             transform: 'rotate(120deg)',  
+          },
+          '83%' : { 
+            transform: 'rotate(150deg)', 
           },
           '100%' : { 
             transform: 'rotate(180deg)',  
           },
         },
+        'rotate-arrow-b': {
+          '0%' : { 
+            transform: 'rotate(180deg)', 
+          },
+          '17%' : { 
+            transform: 'rotate(150deg)', 
+          },
+          '33%' : { 
+            transform: 'rotate(120deg)',  
+          },
+          '52%' : { 
+            transform: 'rotate(90deg)', 
+          },
+          '66%' : { 
+            transform: 'rotate(60deg)',  
+          },
+          '83%' : { 
+            transform: 'rotate(30deg)', 
+          },
+          '100%' : { 
+            transform: 'rotate(0deg)',  
+          },
+        },
       },
       animation: {
         'open-menu': 'open-menu 0.1s ease-in forwards',
-        'rotate-arrow': 'rotate-arrow 0.3s linear forwards',
+        'rotate-arrow-f': 'rotate-arrow-f 0.1s linear forwards',
+        'rotate-arrow-b': 'rotate-arrow-b 0.1s linear forwards',
       }
     },
   },
