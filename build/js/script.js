@@ -214,6 +214,164 @@ const initApp = () => {
     sell_mobile_btn.addEventListener('click', toggleSellMobileMenu);
     resources_mobile_btn.addEventListener('click', toggleResourcesMobileMenu);
 
+
+    const platform = document.getElementById("platform");
+    const support = document.getElementById("support");
+    const features = document.getElementById("features");
+    const compare = document.getElementById("compare");
+    const resources = document.getElementById("resources-a");
+    const podia = document.getElementById("podia");
+    const social = document.getElementById("social");
+
+    const platform_menu = document.getElementById("platform-menu");
+    const support_menu = document.getElementById("support-menu");
+    const features_menu = document.getElementById("features-menu");
+    const compare_menu = document.getElementById("compare-menu");
+    const resources_a_menu = document.getElementById("resources-a-menu");
+    const podia_menu = document.getElementById("podia-menu");
+    const social_menu = document.getElementById("social-menu");
+
+    const platformToggle = () => {
+        platform_menu.classList.toggle('hidden');
+        platform_menu.classList.toggle('flex');
+
+        support_menu.classList.remove('flex');
+        features_menu.classList.remove('flex');
+        compare_menu.classList.remove('flex');
+        resources_a_menu.classList.remove('flex');
+        podia_menu.classList.remove('flex');
+        social_menu.classList.remove('flex');
+
+        support_menu.classList.add('hidden');
+        features_menu.classList.add('hidden');
+        compare_menu.classList.add('hidden');
+        resources_a_menu.classList.add('hidden');
+        podia_menu.classList.add('hidden');
+        social_menu.classList.add('hidden');
+
+    }
+
+    const supportToggle = () => {
+        support_menu.classList.toggle('hidden');
+        support_menu.classList.toggle('flex');
+
+        platform_menu.classList.remove('flex');
+        features_menu.classList.remove('flex');
+        compare_menu.classList.remove('flex');
+        resources_a_menu.classList.remove('flex');
+        podia_menu.classList.remove('flex');
+        social_menu.classList.remove('flex');
+
+        platform_menu.classList.add('hidden');
+        features_menu.classList.add('hidden');
+        compare_menu.classList.add('hidden');
+        resources_a_menu.classList.add('hidden');
+        podia_menu.classList.add('hidden');
+        social_menu.classList.add('hidden');
+    }
+
+    const featuresToggle = () => {
+        features_menu.classList.toggle('hidden');
+        features_menu.classList.toggle('flex');
+
+        platform_menu.classList.remove('flex');
+        support_menu.classList.remove('flex');
+        compare_menu.classList.remove('flex');
+        resources_a_menu.classList.remove('flex');
+        podia_menu.classList.remove('flex');
+        social_menu.classList.remove('flex');
+
+        platform_menu.classList.add('hidden');
+        support_menu.classList.add('hidden');
+        compare_menu.classList.add('hidden');
+        resources_a_menu.classList.add('hidden');
+        podia_menu.classList.add('hidden');
+        social_menu.classList.add('hidden');
+    }
+
+    const compareToggle = () => {
+        compare_menu.classList.toggle('hidden');
+        compare_menu.classList.toggle('flex');
+
+        platform_menu.classList.remove('flex');
+        support_menu.classList.remove('flex');
+        features_menu.classList.remove('flex');
+        resources_a_menu.classList.remove('flex');
+        podia_menu.classList.remove('flex');
+        social_menu.classList.remove('flex');
+
+        platform_menu.classList.add('hidden');
+        support_menu.classList.add('hidden');
+        features_menu.classList.add('hidden');
+        resources_a_menu.classList.add('hidden');
+        podia_menu.classList.add('hidden');
+        social_menu.classList.add('hidden');
+    }
+
+    const resourcesToggle = () => {
+        resources_a_menu.classList.toggle('hidden');
+        resources_a_menu.classList.toggle('flex');
+
+        platform_menu.classList.remove('flex');
+        support_menu.classList.remove('flex');
+        features_menu.classList.remove('flex');
+        compare_menu.classList.remove('flex');
+        podia_menu.classList.remove('flex');
+        social_menu.classList.remove('flex');
+
+        platform_menu.classList.add('hidden');
+        support_menu.classList.add('hidden');
+        features_menu.classList.add('hidden');
+        compare_menu.classList.add('hidden');
+        podia_menu.classList.add('hidden');
+        social_menu.classList.add('hidden');
+    }
+
+    const podiaToggle = () => {
+        podia_menu.classList.toggle('hidden');
+        podia_menu.classList.toggle('flex');
+
+        platform_menu.classList.remove('flex');
+        support_menu.classList.remove('flex');
+        features_menu.classList.remove('flex');
+        compare_menu.classList.remove('flex');
+        resources_a_menu.classList.remove('flex');
+        social_menu.classList.remove('flex');
+
+        platform_menu.classList.add('hidden');
+        support_menu.classList.add('hidden');
+        features_menu.classList.add('hidden');
+        compare_menu.classList.add('hidden');
+        resources_a_menu.classList.add('hidden');
+        social_menu.classList.add('hidden');
+    }
+
+    const socialToggle = () => {
+        social_menu.classList.toggle('hidden');
+        social_menu.classList.toggle('flex');
+
+        platform_menu.classList.remove('flex');
+        support_menu.classList.remove('flex');
+        features_menu.classList.remove('flex');
+        compare_menu.classList.remove('flex');
+        resources_a_menu.classList.remove('flex');
+        podia_menu.classList.remove('flex');
+
+        platform_menu.classList.add('hidden');
+        support_menu.classList.add('hidden');
+        features_menu.classList.add('hidden');
+        compare_menu.classList.add('hidden');
+        resources_a_menu.classList.add('hidden');
+        podia_menu.classList.add('hidden');
+    }
+
+    platform.addEventListener('click', platformToggle);
+    support.addEventListener('click', supportToggle);
+    features.addEventListener('click', featuresToggle);
+    compare.addEventListener('click', compareToggle);
+    resources.addEventListener('click', resourcesToggle);
+    podia.addEventListener('click', podiaToggle);
+    social.addEventListener('click', socialToggle);
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
