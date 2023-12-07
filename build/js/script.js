@@ -266,7 +266,6 @@ const initApp = () => {
         social_icon.classList.remove('animate-rotate-arrow');
 
         if(window.innerWidth < 768){
-            console.log(window.innerWidth);
             platform.classList.add('text-tekhelet');
             support.classList.remove('text-tekhelet');
             features.classList.remove('text-tekhelet');
