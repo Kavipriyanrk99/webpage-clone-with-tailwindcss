@@ -372,6 +372,17 @@ const initApp = () => {
     resources.addEventListener('click', resourcesToggle);
     podia.addEventListener('click', podiaToggle);
     social.addEventListener('click', socialToggle);
+
+    document.addEventListener('scroll', function () {
+        var navbar = document.getElementById('navbar');
+        var scrollY = window.scrollY;
+
+        if (scrollY > 50) {
+            navbar.classList.add('shadow-md');
+        } else {
+            navbar.classList.remove('shadow-md');
+        }
+      });
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
