@@ -311,6 +311,12 @@ const initApp = () => {
         podia_menu.classList.add('hidden');
         social_menu.classList.add('hidden');
 
+        if(platform_icon.classList.contains('animate-rotate-arrow-f')){
+            platform_icon.classList.add('animate-rotate-arrow-b');
+        }else if(platform_icon.classList.contains('animate-rotate-arrow-b')){
+            platform_icon.classList.remove('animate-rotate-arrow-b');
+        }
+
         platform_icon.classList.toggle('animate-rotate-arrow-f');
         support_icon.classList.remove('animate-rotate-arrow-f');
         features_icon.classList.remove('animate-rotate-arrow-f');
@@ -347,6 +353,12 @@ const initApp = () => {
         resources_a_menu.classList.add('hidden');
         podia_menu.classList.add('hidden');
         social_menu.classList.add('hidden');
+
+        if(support_icon.classList.contains('animate-rotate-arrow-f')){
+            support_icon.classList.add('animate-rotate-arrow-b');
+        }else if(support_icon.classList.contains('animate-rotate-arrow-b')){
+            support_icon.classList.remove('animate-rotate-arrow-b');
+        }
 
         platform_icon.classList.remove('animate-rotate-arrow-f');
         support_icon.classList.toggle('animate-rotate-arrow-f');
@@ -385,6 +397,12 @@ const initApp = () => {
         podia_menu.classList.add('hidden');
         social_menu.classList.add('hidden');
 
+        if(features_icon.classList.contains('animate-rotate-arrow-f')){
+            features_icon.classList.add('animate-rotate-arrow-b');
+        }else if(features_icon.classList.contains('animate-rotate-arrow-b')){
+            features_icon.classList.remove('animate-rotate-arrow-b');
+        }
+
         platform_icon.classList.remove('animate-rotate-arrow-f');
         support_icon.classList.remove('animate-rotate-arrow-f');
         features_icon.classList.toggle('animate-rotate-arrow-f');
@@ -421,6 +439,12 @@ const initApp = () => {
         resources_a_menu.classList.add('hidden');
         podia_menu.classList.add('hidden');
         social_menu.classList.add('hidden');
+
+        if(compare_icon.classList.contains('animate-rotate-arrow-f')){
+            compare_icon.classList.add('animate-rotate-arrow-b');
+        }else if(compare_icon.classList.contains('animate-rotate-arrow-b')){
+            compare_icon.classList.remove('animate-rotate-arrow-b');
+        }
 
         platform_icon.classList.remove('animate-rotate-arrow-f');
         support_icon.classList.remove('animate-rotate-arrow-f');
@@ -459,6 +483,12 @@ const initApp = () => {
         podia_menu.classList.add('hidden');
         social_menu.classList.add('hidden');
 
+        if(resources_icon.classList.contains('animate-rotate-arrow-f')){
+            resources_icon.classList.add('animate-rotate-arrow-b');
+        }else if(resources_icon.classList.contains('animate-rotate-arrow-b')){
+            resources_icon.classList.remove('animate-rotate-arrow-b');
+        }
+
         platform_icon.classList.remove('animate-rotate-arrow-f');
         support_icon.classList.remove('animate-rotate-arrow-f');
         features_icon.classList.remove('animate-rotate-arrow-f');
@@ -496,6 +526,12 @@ const initApp = () => {
         resources_a_menu.classList.add('hidden');
         social_menu.classList.add('hidden');
 
+        if(podia_icon.classList.contains('animate-rotate-arrow-f')){
+            podia_icon.classList.add('animate-rotate-arrow-b');
+        }else if(podia_icon.classList.contains('animate-rotate-arrow-b')){
+            podia_icon.classList.remove('animate-rotate-arrow-b');
+        }
+
         platform_icon.classList.remove('animate-rotate-arrow-f');
         support_icon.classList.remove('animate-rotate-arrow-f');
         features_icon.classList.remove('animate-rotate-arrow-f');
@@ -532,6 +568,12 @@ const initApp = () => {
         compare_menu.classList.add('hidden');
         resources_a_menu.classList.add('hidden');
         podia_menu.classList.add('hidden');
+
+        if(social_icon.classList.contains('animate-rotate-arrow-f')){
+            social_icon.classList.add('animate-rotate-arrow-b');
+        }else if(social_icon.classList.contains('animate-rotate-arrow-b')){
+            social_icon.classList.remove('animate-rotate-arrow-b');
+        }
 
         platform_icon.classList.remove('animate-rotate-arrow-f');
         support_icon.classList.remove('animate-rotate-arrow-f');
