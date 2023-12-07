@@ -2,7 +2,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme'); /* tailwind should be linked with npm through --- npm link tailwindcss */
 
 module.exports = {
-  content: ['./build/*.html', './build/js/.*js'],
+  content: ['./build/*.html', './build/js/*.js'],
   theme: {
     extend: {
       fontFamily: {
@@ -19,6 +19,7 @@ module.exports = {
         'tropicalindigo': '#9484c6',
         'grape': '#5233b0',
         'persianindigo': '#351e7a',
+        'lavanderweb': '#d7d2e8',
       },
       keyframes: {
         'open-menu': {
@@ -35,9 +36,24 @@ module.exports = {
             opacity: '100%',  
           },
         },
+        'rotate-arrow': {
+          '0%' : { 
+            transform: 'rotate(0deg)', 
+          },
+          '33%' : { 
+            transform: 'rotate(60deg)',  
+          },
+          '66%' : { 
+            transform: 'rotate(120deg)',  
+          },
+          '100%' : { 
+            transform: 'rotate(180deg)',  
+          },
+        },
       },
       animation: {
         'open-menu': 'open-menu 0.1s ease-in forwards',
+        'rotate-arrow': 'rotate-arrow 0.3s linear forwards',
       }
     },
   },
