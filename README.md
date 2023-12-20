@@ -10,4 +10,4 @@ This is my learning journey with Tailwind CSS, which focuses on cloning the <a h
 
 
 - **Podia live site** - <a href="https://www.podia.com/digital-products">podia.com/digital-products</a>
-- **Podia clone** - 
+- **Podia clone** - <a href="https://clone-podiadigitalproducts.onrender.com/">clone-podiadigitalproducts.onrender.com</a>
